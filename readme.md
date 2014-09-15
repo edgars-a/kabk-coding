@@ -3,8 +3,13 @@ This repository will contain examples for the `coding` class at [kabk](http://ww
 The latest version is always [downloadable here](https://github.com/freder/kabk-coding/archive/master.zip).
 
 # processing
+In this course we are going to use a programming environment called [processing](http://processing.org/).
+
+> Processing is a programming language, development environment, and online community. Since 2001, Processing has promoted software literacy within the visual arts and visual literacy within technology. Initially created to serve as a software sketchbook and to teach computer programming fundamentals within a visual context, Processing evolved into a development tool for professionals. Today, there are tens of thousands of students, artists, designers, researchers, and hobbyists who use Processing for learning, prototyping, and production.
+
 - [download](https://processing.org/download/?processing)
 - [the processing user interface](http://processing.org/tutorials/gettingstarted/)
+- [the environment](http://processing.org/reference/environment/)
 
 ## code examples
 - [hello world](001/code/s001_hello_world/s001_hello_world.pde)
