@@ -16,7 +16,8 @@ In this course we are going to use a programming environment called [processing]
 - [hello mouse](001/code/s002_hello_mouse/s002_hello_mouse.pde)
 
 ## homework #1
-Choose a cartoon character you like and draw it in processing. Use the shapes we've used in class, but also have a look at [the reference](http://processing.org/reference/) for things we may not have talked about — check out the items under the following sections: __2D Prmimitives__, __Curves__
+1. Choose a cartoon character you like and draw it in processing. Use the shapes we've used in class, but also have a look at [the reference](http://processing.org/reference/) for things we may not have talked about — check out the items under the following sections: __2D Primitives__, __Curves__
+2. To familiarize yourself with what's possible with *creative coding,* take some time to browse through [creative applications](http://www.creativeapplications.net/).
 
 ## where to find help / answers?
 You can always ask me, but I encourage you try to figure out your problem yourself first. Finding and fixing errors is a big part of programming; programmers actually need to look up stuff *all the time.*
