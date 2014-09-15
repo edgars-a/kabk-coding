@@ -6,12 +6,15 @@ The latest version is always [downloadable here](https://github.com/freder/kabk-
 - [download](https://processing.org/download/?processing)
 - [the processing user interface](http://processing.org/tutorials/gettingstarted/)
 
-## basic examples
+## code examples
 - [hello world](001/code/s001_hello_world/s001_hello_world.pde)
 - [hello mouse](001/code/s002_hello_mouse/s002_hello_mouse.pde)
 
+## homework #1
+Choose a cartoon character you like and draw it in processing. Use the shapes we've used in class, but also have a look at [the reference](http://processing.org/reference/) for things we may not have talked about — check out the items under the following sections: __2D Prmimitives__, __Curves__
+
 ## where to get help?
-You can always ask me, but I encourage you try to figure out your problem yourself first. Programmers actually need to look up stuff *all the time.*
+You can always ask me, but I encourage you try to figure out your problem yourself first. Finding and fixing errors is a big part of programming; programmers actually need to look up stuff *all the time.*
 - consulting the [reference](http://processing.org/reference/)
 - using the [forum](http://forum.processing.org/)
 - [google](http://www.google.com)
