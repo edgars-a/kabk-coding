@@ -2,6 +2,17 @@ This repository will contain examples for the `coding` class at [kabk](http://ww
 
 The latest version is always [downloadable here](https://github.com/freder/kabk-coding/archive/master.zip).
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [processing](#processing)
+  - [code examples](#code-examples)
+  - [homework #1](#homework-#1)
+- [where to find help / answers?](#where-to-find-help--answers)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # processing
 In this course we are going to use a programming environment called [processing](http://processing.org/).
 
@@ -19,7 +30,7 @@ In this course we are going to use a programming environment called [processing]
 1. Choose a cartoon character you like and draw it in processing. Use the shapes we've used in class, but also have a look at [the reference](http://processing.org/reference/) for things we may not have talked about — check out the items under the following sections: __2D Primitives__, __Curves__
 2. To familiarize yourself with what's possible with *creative coding,* take some time to browse through [creative applications](http://www.creativeapplications.net/).
 
-## where to find help / answers?
+# where to find help / answers?
 You can always ask me, but I encourage you try to figure out your problem yourself first. Finding and fixing errors is a big part of programming; programmers actually need to look up stuff *all the time.*
 - reading the [FAQ](https://github.com/processing/processing/wiki/FAQ)
 - consulting the [reference](http://processing.org/reference/)
