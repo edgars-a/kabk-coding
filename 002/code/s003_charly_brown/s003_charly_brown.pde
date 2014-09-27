@@ -1,12 +1,17 @@
 int background_color = color(28, 150, 173);
 int skin_color = color(246, 206, 157);
-int shirt_color = color(253, 209, 12);
+//int shirt_color = color(253, 209, 12);
 
 float stroke_weight = 8;
+
+PImage hair;
+
 
 void setup() {
   size(640, 640);
 //  noLoop();
+
+  hair = loadImage("hair.png"); // load images in setup() or after ... 
 }
 
 void draw() {
@@ -21,6 +26,7 @@ void draw() {
   draw_eyes();
   draw_nose();
   draw_mouth();
+  draw_hair();
 }
 
 void draw_head() {
@@ -129,4 +135,12 @@ void draw_mouth() {
     scale(1, -1); // mirror horizontally
     arc(0, 0, 118*2, 64*2, radians(170), radians(360+10), OPEN);
   popMatrix(); // restore transformation to previous state
+}
+
+void draw_hair() {
+  // I'm cheating a bit by drawing an image file ;>
+  pushMatrix();
+    translate(245, 75);
+    image(hair, 0, 0);
+  popMatrix();
 }
