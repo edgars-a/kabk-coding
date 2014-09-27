@@ -34,6 +34,13 @@ You can always ask me, but I encourage you try to figure out your problem yourse
 - [google](http://www.google.com)
 - general programming questions: [stackoverflow](http://www.stackoverflow.com)
 
+## books
+- [Processing — A Programming Handbook for Visual Designers and Artists](http://mitpress.mit.edu/books/processing)
+- [Generative Gestaltung](http://www.generative-gestaltung.de/)
+- [The Nature of Code](http://natureofcode.com/book/)
+- [Form+Code](http://formandcode.com/)
+- [Visualizing Data: Exploring and Explaining Data with the Processing Environment](http://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=pd_sim_b_7?ie=UTF8&refRID=1QMPD8Z2H3QFHM3BBHY0)
+
 # session #1
 
 ## code examples
