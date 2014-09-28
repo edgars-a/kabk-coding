@@ -40,6 +40,6 @@ You can always ask me, but I encourage you try to figure out your problem yourse
 - [Form+Code](http://formandcode.com/)
 - [Visualizing Data: Exploring and Explaining Data with the Processing Environment](http://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=pd_sim_b_7?ie=UTF8&refRID=1QMPD8Z2H3QFHM3BBHY0)
 
-# sessions
-- [session #1](./001/readme.md)
-- [session #2](./002/readme.md)
+# session notes
+- [session #1](./001/)
+- [session #2](./002/)
