@@ -11,7 +11,7 @@
 # session #2
 
 ## code examples
-- [charlie brown](002/code/s003_charlie_brown/s003_charlie_brown.pde)
+- [charlie brown](./code/s003_charlie_brown/s003_charlie_brown.pde)
 
 ## homework
 1. x
