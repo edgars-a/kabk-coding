@@ -1,6 +1,5 @@
 import controlP5.*; // we're using the controlP5 library
 
-int background_color = color(28, 150, 173);
 int skin_color = color(246, 206, 157);
 float stroke_weight = 8;
 
@@ -35,16 +34,11 @@ void setup() {
 }
 
 void draw() {
-  background(background_color);
+  image(head, 0, 0);
   
-  draw_head();
   draw_eyes();
   draw_nose();
   draw_mouth();
-}
-
-void draw_head() {
-  image(head, 0, 0);
 }
 
 void draw_eyes() {
@@ -52,14 +46,29 @@ void draw_eyes() {
   fill(0);
   
   pushMatrix();
-    translate(315, 287);
+    translate(315, 287); // move the origin to the center point between the eyes
+    // whatever the value of eye_distance is, draw the
+    // eye (eye_distance/2) pixels left of the origin.
+    // the size of the eye is determined by eye_diameter.
     ellipse(-eye_distance/2, 0, eye_diameter, eye_diameter);
     ellipse(eye_distance/2, 0, eye_diameter, eye_diameter);
     
+    // introducing 'evilness' to the eye brows is a bit more difficult,
+    // because we use the evilness factor to control 4 different visual
+    // characteristics:
+    // - eye brow thickness:
     float brow_weight = map(evilness, 0, 1, 3.5, 20);
+    // - eye brow straightness / curvature:
     float brow_arc_height = map(evilness, 0, 1, 15, 0);
+    // - eye brow width:
     float brow_arc_width_factor = map(evilness, 0, 1, 1, 1.5);
+    // - eye brow angle:
     float brow_angle = map(evilness, 0, 1, 0, radians(45));
+    
+    // the map() function (http://processing.org/reference/map_.html)
+    // is very handy to map a value from one range of values (in this case [0.0 .. 1.0])
+    // to another range.
+    
     strokeWeight(brow_weight);
     stroke(0);
     noFill();
@@ -101,14 +110,20 @@ void draw_mouth() {
   stroke(0);
   strokeWeight(stroke_weight);
   
-  int mirror = 1;
+  // as long as the unhappiness value is below zero,
+  // we need to horisontally flip the mouth.
+  int mirror = 1; // mirror will either be 1 or -1
   if (unhappiness < 0) {
     mirror = -1;
   }
   
   pushMatrix();
     translate(315, 391);
-    scale(1, mirror);
+    scale(1, mirror); // automatically flip or don't flip — depending on what value mirror has
+    // an ellipse can't have a negative height.
+    // multiplying the desired height with mirror will always
+    // produce a positive number.
+    // we use unhappiness as a factor to scale the height.
     arc(0, 0, 236, mirror*unhappiness*128, radians(170), radians(360+10), OPEN);
   popMatrix();
 }
