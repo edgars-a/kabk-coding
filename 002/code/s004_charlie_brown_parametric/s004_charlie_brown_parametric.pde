@@ -131,7 +131,7 @@ void draw_mouth() {
   textSize(32);
   textAlign(CENTER);
   if (unhappiness <= -0.25) {
-    text("“I think I'm afraid to be happy [...]”", width/2, height-32);
+    text("“Awkward is my specialty.”", width/2, height-32);
   } else if (unhappiness <= 0.25) {
     text("“why can't I have a normal dog?”", width/2, height-32);
   } else {
