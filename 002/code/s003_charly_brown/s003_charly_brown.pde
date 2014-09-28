@@ -1,15 +1,11 @@
 int background_color = color(28, 150, 173);
 int skin_color = color(246, 206, 157);
-//int shirt_color = color(253, 209, 12);
-
 float stroke_weight = 8;
 
 PShape hair;
 
-
 void setup() {
   size(640, 640);
-//  noLoop();
 
   hair = loadShape("hair.svg"); // load images in setup() or after ...
 }
@@ -38,19 +34,17 @@ void draw_head() {
   pushMatrix();
     translate(314, 278);
     beginShape();
-      vertex(384/2, 0);
-      quadraticVertex(+165, -149*1.5, 0, -149*1.5);
-      quadraticVertex(-185, -149*1.5, -384/2, 0);
-      vertex(-384/2, 0);
+      vertex(192, 0);
+      quadraticVertex(165, -218, 0, -218);
+      quadraticVertex(-185, -218, -192, 0);
+      vertex(-192, 0);
     endShape();
   popMatrix();
 
   // lower half
   pushMatrix();
-    float stretch_factor = 1.0;
     translate(314, 278);
-    scale(1.0/stretch_factor, 1);
-    arc(0, 0, stretch_factor*384, 149*2, radians(0), radians(180), OPEN);
+    arc(0, 0, 384, 298, radians(0), radians(180), OPEN);
   popMatrix();
 }
 
@@ -58,11 +52,9 @@ void draw_eyes() {
   noStroke();
   fill(0);
 
-  // storing the diameter in a variable
-  // makes it easier to change the size
-  // of his eyes later.
-  // we only have to change a single line
-  // of code!
+  // storing the diameter in a variable makes it easier 
+  // to change the size of his eyes later. to do that 
+  // we only have to change a single line of code!
   float eye_diameter = 20;
   float eye_distance = 110;
 
@@ -71,7 +63,7 @@ void draw_eyes() {
     ellipse(-eye_distance/2, 0, eye_diameter, eye_diameter);
     ellipse(eye_distance/2, 0, eye_diameter, eye_diameter);
 
-    strokeWeight(stroke_weight / 2.5);
+    strokeWeight(3.5);
     stroke(0);
     noFill();
     float left_eyebrow_x_offset = -(eye_distance/2) -8;
@@ -131,9 +123,9 @@ void draw_mouth() {
   strokeWeight(stroke_weight);
 
   pushMatrix(); // store the current transformation
-    translate(315, 311); // move to center of mouth
+    translate(315, 311); // move origin of coordinate system to center of mouth
     scale(1, -1); // mirror horizontally
-    arc(0, 0, 118*2, 64*2, radians(170), radians(360+10), OPEN);
+    arc(0, 0, 236, 128, radians(170), radians(360+10), OPEN);
   popMatrix(); // restore transformation to previous state
 }
 
