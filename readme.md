@@ -9,9 +9,8 @@ The latest version is always [downloadable here](https://github.com/freder/kabk-
 - [processing](#processing)
   - [getting started](#getting-started)
   - [where to find help / answers?](#where-to-find-help--answers)
-- [session #1](#session-#1)
-  - [code examples](#code-examples)
-  - [homework](#homework)
+  - [books](#books)
+- [sessions](#sessions)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -41,13 +40,6 @@ You can always ask me, but I encourage you try to figure out your problem yourse
 - [Form+Code](http://formandcode.com/)
 - [Visualizing Data: Exploring and Explaining Data with the Processing Environment](http://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=pd_sim_b_7?ie=UTF8&refRID=1QMPD8Z2H3QFHM3BBHY0)
 
-# session #1
-
-## code examples
-- [hello world](001/code/s001_hello_world/s001_hello_world.pde)
-- [hello mouse](001/code/s002_hello_mouse/s002_hello_mouse.pde)
-
-## homework
-1. Choose a cartoon character you like and draw it in processing. Use the shapes we've used in class, but also have a look at [the reference](http://processing.org/reference/) for things we may not have talked about — check out the items under the following sections: __2D Primitives__, __Curves__
-2. To familiarize yourself some more with what's possible with *creative coding,* take some time to browse through [creative applications](http://www.creativeapplications.net/) and look at the projects.
-3. *(recommended)* watch [Eyeo 2014 - Frieder Nake](https://vimeo.com/104315361)
+# sessions
+- [session #1](./001/readme.md)
+- [session #2](./002/readme.md)
