@@ -126,5 +126,16 @@ void draw_mouth() {
     // we use unhappiness as a factor to scale the height.
     arc(0, 0, 236, mirror*unhappiness*128, radians(170), radians(360+10), OPEN);
   popMatrix();
+  
+  fill(255);
+  textSize(32);
+  textAlign(CENTER);
+  if (unhappiness <= -0.25) {
+    text("“I think I'm afraid to be happy [...]”", width/2, height-32);
+  } else if (unhappiness <= 0.25) {
+    text("“why can't I have a normal dog?”", width/2, height-32);
+  } else {
+    text("“good grief.”", width/2, height-32);
+  }
 }
 
